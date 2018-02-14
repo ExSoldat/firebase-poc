@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <p>Hello world! This is HTML5 Boilerplate.</p>
+    <p>Please enter your email and password :</p>
+    <form>
+        <label>Email</label>
+        <br />
+        <input type="text" id="email" />
+        <br />
+        <label>Password</label>
+        <br />
+        <input type="password" id="password" />
+        <br />
+        <select id="usertype">
+            <option value="entreprise">Entreprise</option>
+            <option value="school">Etablissement</option>
+            <option value="user" selected="selected">Utiliateur</option>
+        </select>
+        <br/>
+        <button type="button" onclick="logIn()">Se connecter</button>
+        <br />
+        <button type="button" onclick="signIn()">Créer un compte</button>
+        <br />
+        <button type="button" onclick="loginWithGoogle()">Se connecter avec google</button>
+        <br />
+        <input id="file" name="file" type="file">
+        <br />
+        <button type="button" onclick="uploadFile()">Envoyer le fichier choisi</button>
+        <br />
+        <button type="button" style="display:none" id="logout" onclick="logOut()">Se déconnecter</button>
+        <br />
+        <button type="button" onclick="loadFile()">Charger l'image téléchargée</button>
+        <img id="image" />
+    </form>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>-->
+    <!-- This will add all firebase components -->
+    <!-- You can also add the components one by one depending on your needs: -->
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-storage.js"></script>
+    <!-- Instead of adding firebase here, if you use a bundler like Browserify or webpack and you installed firebase-cli, 
+        you can juste require the components you will use
+        e.g: var firebase = require("firebase/app"); require("firebase/auth"); etc...-->
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
