@@ -24,7 +24,7 @@ Assurez vous d'initialiser firebase et les composants desquels nous aurons besoi
     database = firebase.database();
     storage = firebase.storage();
 
-Et c'est tout ! Une fois ceci fait, vous n'aurez plus qu'à commencer à coder ! Nous allons présenter dorénavent certaines fonctions de base en javascript pur pour utiliser firebase. Vous devrez sans doute faire quelques recherces supplémentaires pour l'utiliser de la meilleure manière possible avec vos frameworks/langages de programmation.
+Et c'est tout ! Une fois ceci fait, vous n'aurez plus qu'à commencer à coder ! Nous allons présenter dorénavent certaines fonctions de base en javascript pur pour utiliser firebase. Vous devrez sans doute faire quelques recherches supplémentaires pour l'utiliser de la meilleure manière possible avec vos frameworks/langages de programmation.
 
 # Gestion des utilisateurs
 ## S'inscrire et se connecter
