@@ -33,7 +33,7 @@ window.onload = (() => {
         console.log(user);
         if (user) {
             document.getElementById('logout').style.display = "block";
-            //Check if the user has a role or not. If he don't, we should ask him or do whatever process that helps us to know his role
+            //Check if the user has a role or not. If he doesn't, we should ask him or do whatever process that helps us to know his role
             checkUserPrivileges(user);
         } else {
             document.getElementById('logout').style.display = "none";
@@ -138,7 +138,7 @@ function updateUserObject(user, usertype) {
     console.log("updating database... :fire:");
     database.ref('/users/' + user.uid).set({
         email: user.email,
-        role: usertype //, other datas....
+        role: usertype //, other datas.... 
     });
 }
 
@@ -162,5 +162,4 @@ function loadFile() {
     var pathReference = storage.ref('images/picture.jpg').getDownloadURL().then((url) => {
         document.getElementById("image").src = url;
     });
-
 }
